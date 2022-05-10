@@ -8,7 +8,15 @@ namespace _001_SwitchingViewsMVVM.ViewModels
 {
     public class MainViewModel : BaseViewModel
     {
-        
+        // controla la navegación entre los viewModels
+        private BaseViewModel _selectedViewModel = new HomeViewModel();
+
+        public BaseViewModel SelectedViewModel
+        {
+            get { return _selectedViewModel; }
+            set { _selectedViewModel = value; }
+        }
+
 
     }
 }

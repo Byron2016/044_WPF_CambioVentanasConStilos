@@ -1,4 +1,5 @@
-﻿using System;
+﻿using _001_SwitchingViewsMVVM.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,8 @@ namespace _001_SwitchingViewsMVVM
         public MainWindow()
         {
             InitializeComponent();
+
+            DataContext = new MainViewModel();
         }
     }
 }
